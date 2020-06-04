@@ -17,7 +17,7 @@
 /**
  * Plugin strings are defined here.
  *
- * @package     local_regform
+ * @package     local_newplugin
  * @category    string
  * @copyright   2020 Jo Beaver <myemail@example.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
