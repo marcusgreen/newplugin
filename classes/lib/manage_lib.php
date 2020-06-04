@@ -6,13 +6,6 @@ defined('MOODLE_INTERNAL') || die;
 
 class manage_lib {
 
-/**
- * Returns list of ...
- */
-//  public static function get_np_table_data() {
-//      global $DB;
-//      return $DB->get_records('np_newtable');
-//  }
     public static function get_np_table_data() {
         global $DB;
         
