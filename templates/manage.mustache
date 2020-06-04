@@ -1,0 +1,32 @@
+
+<p>{{#str}} manageintro, local_newplugin {{/str}}</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">{{#str}} name, local_newplugin {{/str}}</th>
+            <th scope="col">{{#str}} type, local_newplugin {{/str}}</th>
+            <th scope="col">{{#str}} level, local_newplugin {{/str}}</th>
+            <th scope="col">{{#str}} duedate, local_newplugin {{/str}}</th>
+            <th scope="col">{{#str}} manage, local_newplugin {{/str}}</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#rows}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{type}}</td>
+            <td>{{nplevel}}</td>
+            <td>{{duedate}}</td>
+            <td>
+                <a title="{{#str}} edit, local_newplugin {{/str}}" href="{{config.wwwroot}}/local/newplugin/create.php?id={{id}}"><i class="icon fa fa-edit"></i></a>
+                <a title="{{#str}} delete {{/str}}" href="?delete={{id}}"><i class="icon fa fa-trash"></i></a>                            
+            </td>            
+        </tr>
+    {{/rows}}    
+    </tbody>
+</table>
+<div class="py-3">
+    <a href="{{config.wwwroot}}/local/newplugin/create.php" class="btn btn-primary">{{#str}} create, local_newplugin {{/str}}</a>
+</div>
+
