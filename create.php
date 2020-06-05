@@ -25,9 +25,7 @@ if ($mform->is_cancelled()) {
         $recordid = $DB->insert_record('np_newtable', $fromform);
     }    
     redirect(new moodle_url('/local/newplugin/manage.php'), get_string('success'), 5);
-} else if ($errors = $mform->is_validated()) {   
-    throw new moodle_exception('generalerror');
-}
+} 
 
 // Set data if already created.
 if ($id != 0) {
